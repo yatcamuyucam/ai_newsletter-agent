@@ -7,7 +7,7 @@ Bu proje, **Multi-Agent (Çoklu Ajan)** mimarisi üzerine kurulu, internetten ge
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
 ![CrewAI](https://img.shields.io/badge/Orchestration-CrewAI-orange?style=for-the-badge)
 ![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-red?style=for-the-badge&logo=streamlit&logoColor=white)
-![Gemini](https://img.shields.io/badge/LLM-Google%20Gemini%201.5%20Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Gemini](https://img.shields.io/badge/LLM-Google%20Gemini%202.5%20Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
 ## 🏗️ Proje Mimarisi
 
