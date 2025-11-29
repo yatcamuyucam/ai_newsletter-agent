@@ -9,10 +9,12 @@ Bu proje, **Multi-Agent (Çoklu Ajan)** mimarisi üzerine kurulu, internetten ge
 ![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-red?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Gemini](https://img.shields.io/badge/LLM-Google%20Gemini%202.5%20Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
+## 🖼️ Ekran Görüntüleri
 
-<img width="1896" height="811" alt="Ekran görüntüsü 2025-11-29 025642" src="https://github.com/user-attachments/assets/3fea94e7-679c-4e73-b2a0-582a141f965f" />
-<img width="1397" height="842" alt="Ekran görüntüsü 2025-11-29 025725" src="https://github.com/user-attachments/assets/c1133d1f-689b-4fd7-8808-60ddf558893d" />
-
+<div style="display: flex; gap: 20px; flex-wrap: wrap;">
+  <img src="https://github.com/user-attachments/assets/3fea94e7-679c-4e73-b2a0-582a141f965f" alt="Ekran görüntüsü 1" width="45%" style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 2px 2px 12px #aaa;"/>
+  <img src="https://github.com/user-attachments/assets/c1133d1f-689b-4fd7-8808-60ddf558893d" alt="Ekran görüntüsü 2" width="45%" style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 2px 2px 12px #aaa;"/>
+</div>
 
 ## 🏗️ Proje Mimarisi
 
@@ -37,21 +39,21 @@ Bu projede modern ve güçlü araçlar kullanılmıştır:
 - **Python 3.10+** – Projenin ana programlama dili ve yapay zeka entegrasyonu için temel.
 - **Streamlit** – Kullanıcı dostu ve etkileşimli web arayüzü oluşturmak için.
 - **CrewAI** – Multi-Agent (Çoklu Ajan) mimarisi ile görevleri organize etmek ve otomasyon sağlamak için.
-- **Google Gemini 2.5 Flash** – Gelişmiş LLM (Large Language Model) ile haberleri analiz etmek ve bülten oluşturmak için.
+- **Google Gemini 2.5 Flash** – Gelişmiş LLM ile haberleri analiz etmek ve bülten oluşturmak için.
 - **SerperDevTool (Google Search API)** – İnternetten gerçek zamanlı veri toplamak için.
 - **dotenv (.env dosyası)** – API anahtarlarının güvenli bir şekilde yönetilmesini sağlar.
 
+---
+
 ## 🛠️ Karşılaşılan Zorluklar ve Geliştirilen Çözümleri
 
-Bu projenin geliştirilme sürecinde performans, maliyet ve donanım kısıtları üzerine yoğun optimizasyonlar yapılmıştır:
-
 ### 1. Yerel LLM Kaynak Yönetimi & Halüsinasyon Sorunu
-* **Sorun:** Proje ilk olarak yerel modellerle çalışacak şekilde tasarlandı. `Llama 3.1 (8B)` modeli donanım kaynaklarını (RAM/CPU) tüketti. Daha küçük modeller (`Llama 3.2 1B`, `Qwen 1.5B`) denendiğinde ise "Code-Switching" (Yarı Türkçe, yarı İngilizce konuşma) ve halüsinasyon sorunları yaşandı.
+* **Sorun:** Proje ilk olarak yerel modellerle çalışacak şekilde tasarlandı. `Llama 3.1 (8B)` modeli donanım kaynaklarını tüketti. Daha küçük modeller denendiğinde ise yarı Türkçe yarı İngilizce ve halüsinasyon sorunları yaşandı.
 * **Çözüm:** Hibrit yapıya geçildi. Donanım bağımlılığını ortadan kaldırmak için bulut tabanlı modellere yönelindi.
 
 ### 2. Rate Limit (Hız Sınırı) Optimizasyonu
-* **Sorun:** Ajanların detaylı ve uzun içerik üretmesi istendiğinde `RateLimitError` (Dakikalık Token Sınırı) ile karşılaşıldı.
-* **Çözüm:** Model stratejisi değiştirildi. Yüksek hız, geniş bağlam penceresi ve cömert ücretsiz kota sunan **Google Gemini 2.5 Flash** modeline geçildi.
+* **Sorun:** Ajanlar uzun içerik üretirken `RateLimitError` ile karşılaştı.
+* **Çözüm:** Google Gemini 2.5 Flash modeline geçildi; yüksek hız, geniş bağlam penceresi ve cömert kota sağlandı.
 
 ---
 
