@@ -9,8 +9,6 @@ Bu proje, **Multi-Agent (Çoklu Ajan)** mimarisi üzerine kurulu, internetten ge
 ![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-red?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Gemini](https://img.shields.io/badge/LLM-Google%20Gemini%202.5%20Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
-## 🖼️ Ekran Görüntüleri
-
 <div style="display: flex; gap: 20px; flex-wrap: wrap;">
   <img src="https://github.com/user-attachments/assets/3fea94e7-679c-4e73-b2a0-582a141f965f" alt="Ekran görüntüsü 1" width="45%" style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 2px 2px 12px #aaa;"/>
   <img src="https://github.com/user-attachments/assets/c1133d1f-689b-4fd7-8808-60ddf558893d" alt="Ekran görüntüsü 2" width="45%" style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 2px 2px 12px #aaa;"/>
