@@ -37,10 +37,6 @@ Bu projenin geliştirilme sürecinde performans, maliyet ve donanım kısıtlar�
 * **Sorun:** Groq (Llama 3 70B) entegrasyonunda, ajanların detaylı ve uzun içerik üretmesi istendiğinde `RateLimitError` (Dakikalık Token Sınırı) ile karşılaşıldı.
 * **Çözüm:** Model stratejisi değiştirildi. Yüksek hız, geniş bağlam penceresi (Context Window) ve cömert ücretsiz kota sunan **Google Gemini 1.5 Flash** modeline migrasyon yapıldı.
 
-### 3. Git Büyük Dosya Yönetimi
-* **Sorun:** `venv` (sanal ortam) klasörünün yanlışlıkla Git takibine alınması sonucu, 100MB üzeri dosyalar nedeniyle Push işlemi reddedildi.
-* **Çözüm:** Git geçmişi temizlendi (`git reset`), `.gitignore` dosyası optimize edildi ve repo temiz bir başlangıçla yeniden yapılandırıldı.
-
 ---
 
 ## 🚀 Kurulum ve Çalıştırma
