@@ -1,4 +1,4 @@
-# 🕵️‍♂️ Kişisel AI Bülten Asistanı (AI Newsletter Agent)
+# 🕵️‍♂️ https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGYwNzM0bDhvdDBncnFhZHg4MmNiM3Bxc2xhY2t6amh6Z29hY2MzNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SL0ctZ9qJKJLa/giphy.gif Kişisel AI Bülten Asistanı (AI Newsletter Agent)
 
 > **"Bilgi kirliliğini otonom ajanlarla aşın. Siz konuyu söyleyin, yapay zeka araştırsın, derlesin ve profesyonel bir bülten olarak sunsun."**
 
@@ -9,8 +9,9 @@ Bu proje, **Multi-Agent (Çoklu Ajan)** mimarisi üzerine kurulu, internetten ge
 ![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-red?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Gemini](https://img.shields.io/badge/LLM-Google%20Gemini%202.5%20Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
-<img width="1397" height="842" alt="Ekran görüntüsü 2025-11-29 025725" src="https://github.com/user-attachments/assets/c1133d1f-689b-4fd7-8808-60ddf558893d" />
+
 <img width="1896" height="811" alt="Ekran görüntüsü 2025-11-29 025642" src="https://github.com/user-attachments/assets/3fea94e7-679c-4e73-b2a0-582a141f965f" />
+<img width="1397" height="842" alt="Ekran görüntüsü 2025-11-29 025725" src="https://github.com/user-attachments/assets/c1133d1f-689b-4fd7-8808-60ddf558893d" />
 
 
 ## 🏗️ Proje Mimarisi
@@ -29,7 +30,18 @@ Sistem, görevleri paylaşan iki otonom ajandan oluşur:
 
 ---
 
-## 🛠️ Karşılaşılan Zorluklar ve Mühendislik Çözümleri
+## 🧑🏻‍💻 Kullanılan Teknolojiler
+
+Bu projede modern ve güçlü araçlar kullanılmıştır:
+
+- **Python 3.10+** – Projenin ana programlama dili ve yapay zeka entegrasyonu için temel.
+- **Streamlit** – Kullanıcı dostu ve etkileşimli web arayüzü oluşturmak için.
+- **CrewAI** – Multi-Agent (Çoklu Ajan) mimarisi ile görevleri organize etmek ve otomasyon sağlamak için.
+- **Google Gemini 2.5 Flash** – Gelişmiş LLM (Large Language Model) ile haberleri analiz etmek ve bülten oluşturmak için.
+- **SerperDevTool (Google Search API)** – İnternetten gerçek zamanlı veri toplamak için.
+- **dotenv (.env dosyası)** – API anahtarlarının güvenli bir şekilde yönetilmesini sağlar.
+
+## 🛠️ Karşılaşılan Zorluklar ve Geliştirilen Çözümleri
 
 Bu projenin geliştirilme sürecinde performans, maliyet ve donanım kısıtları üzerine yoğun optimizasyonlar yapılmıştır:
 
