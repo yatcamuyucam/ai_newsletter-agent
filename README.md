@@ -1,4 +1,4 @@
-# 🕵️‍♂️ https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGYwNzM0bDhvdDBncnFhZHg4MmNiM3Bxc2xhY2t6amh6Z29hY2MzNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SL0ctZ9qJKJLa/giphy.gif Kişisel AI Bülten Asistanı (AI Newsletter Agent)
+# 🕵️‍♂️ Kişisel AI Bülten Asistanı (AI Newsletter Agent)
 
 > **"Bilgi kirliliğini otonom ajanlarla aşın. Siz konuyu söyleyin, yapay zeka araştırsın, derlesin ve profesyonel bir bülten olarak sunsun."**
 
