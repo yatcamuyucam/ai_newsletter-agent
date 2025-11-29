@@ -25,17 +25,17 @@ Sistem, görevleri paylaşan iki otonom ajandan oluşur:
 
 ---
 
-## 🛠️ Karşılaşılan Zorluklar ve Mühendislik Çözümleri (Engineering Journey)
+## 🛠️ Karşılaşılan Zorluklar ve Mühendislik Çözümleri
 
 Bu projenin geliştirilme sürecinde performans, maliyet ve donanım kısıtları üzerine yoğun optimizasyonlar yapılmıştır:
 
 ### 1. Yerel LLM Kaynak Yönetimi & Halüsinasyon Sorunu
-* **Sorun:** Proje ilk olarak yerel modellerle (Local LLM) çalışacak şekilde tasarlandı. `Llama 3.1 (8B)` modeli donanım kaynaklarını (RAM/CPU) tüketti. Daha küçük modeller (`Llama 3.2 1B`, `Qwen 1.5B`) denendiğinde ise "Code-Switching" (Yarı Türkçe, yarı İngilizce konuşma) ve halüsinasyon sorunları yaşandı.
+* **Sorun:** Proje ilk olarak yerel modellerle çalışacak şekilde tasarlandı. `Llama 3.1 (8B)` modeli donanım kaynaklarını (RAM/CPU) tüketti. Daha küçük modeller (`Llama 3.2 1B`, `Qwen 1.5B`) denendiğinde ise "Code-Switching" (Yarı Türkçe, yarı İngilizce konuşma) ve halüsinasyon sorunları yaşandı.
 * **Çözüm:** Hibrit yapıya geçildi. Donanım bağımlılığını ortadan kaldırmak için bulut tabanlı modellere yönelindi.
 
 ### 2. Rate Limit (Hız Sınırı) Optimizasyonu
-* **Sorun:** Groq (Llama 3 70B) entegrasyonunda, ajanların detaylı ve uzun içerik üretmesi istendiğinde `RateLimitError` (Dakikalık Token Sınırı) ile karşılaşıldı.
-* **Çözüm:** Model stratejisi değiştirildi. Yüksek hız, geniş bağlam penceresi (Context Window) ve cömert ücretsiz kota sunan **Google Gemini 1.5 Flash** modeline migrasyon yapıldı.
+* **Sorun:** Ajanların detaylı ve uzun içerik üretmesi istendiğinde `RateLimitError` (Dakikalık Token Sınırı) ile karşılaşıldı.
+* **Çözüm:** Model stratejisi değiştirildi. Yüksek hız, geniş bağlam penceresi ve cömert ücretsiz kota sunan **Google Gemini 2.5 Flash** modeline geçildi.
 
 ---
 
@@ -50,5 +50,10 @@ Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 
 ### Adım 1: Repoyu Klonlayın
 ```bash
-git clone [https://github.com/KULLANICI_ADIN/ai-newsletter-agent.git](https://github.com/KULLANICI_ADIN/ai-newsletter-agent.git)
+git clone https://github.com/KULLANICI_ADIN/ai-newsletter-agent.git
 cd ai-newsletter-agent
+python -m venv venv
+# Windows için:
+.\venv\Scripts\activate
+# Mac/Linux için:
+source venv/bin/activate
